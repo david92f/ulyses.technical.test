@@ -44,11 +44,11 @@ This repository contains a Spring Boot application with the following structure:
       - Response status code
       - Processing time (in milliseconds)
 
-5. **Implementar un sistema de caché para los endpoints GET de Brand**
-   - Verificar si existe en caché y no ha expirado
-   - Si no existe o ha expirado, llamar al supplier
-   - Actualizar la caché con el nuevo valor
-   - Manejar concurrencia adecuadamente
+5. **Implement a caching system for the GET endpoints of Brand**
+   - Check if the data exists in the cache and has not expired.
+   - If it does not exist or has expired, call the supplier.
+   - Update the cache with the new value.
+   - Handle concurrency properly.
 
 ---
 
