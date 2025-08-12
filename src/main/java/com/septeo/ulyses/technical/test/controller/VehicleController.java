@@ -44,7 +44,7 @@ public class VehicleController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Vehicle> updateVehicle(@PathVariable Long id, @RequestBody Vehicle vehicle) {
-        if (!vehicleService.getVehicleById(id).isPresent()) {
+        if (vehicleService.getVehicleById(id).isEmpty()) {
             return ResponseEntity.notFound().build();
         }
 
@@ -59,7 +59,7 @@ public class VehicleController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteVehicle(@PathVariable Long id) {
-        if (!vehicleService.getVehicleById(id).isPresent()) {
+        if (vehicleService.getVehicleById(id).isEmpty()) {
             return ResponseEntity.notFound().build();
         }
         vehicleService.deleteVehicle(id);

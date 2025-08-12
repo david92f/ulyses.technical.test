@@ -49,7 +49,7 @@ public class BrandController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBrand(@PathVariable Long id) {
-        if (!brandService.getBrandById(id).isPresent()) {
+        if (brandService.getBrandById(id).isEmpty()) {
             return ResponseEntity.notFound().build();
         }
         brandService.deleteBrand(id);

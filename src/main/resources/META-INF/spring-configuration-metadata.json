@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "app.user.username",
+      "type": "java.lang.String",
+      "description": "Username for the application user."
+    },
+    {
+      "name": "app.user.password",
+      "type": "java.lang.String",
+      "description": "Password for the application user."
+    }
+  ]
+}
