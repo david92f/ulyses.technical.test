@@ -24,8 +24,12 @@ import java.util.stream.Collectors;
 @Transactional(readOnly = false)
 public class SalesServiceImpl implements SalesService {
 
+    private final SalesRepository salesRepository;
+
     @Autowired
-    private SalesRepository salesRepository;
+    public SalesServiceImpl(SalesRepository salesRepository) {
+        this.salesRepository = salesRepository;
+    }
 
     /**
      * {@inheritDoc}

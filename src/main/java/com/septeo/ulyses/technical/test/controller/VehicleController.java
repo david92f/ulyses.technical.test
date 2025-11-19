@@ -14,10 +14,14 @@ import java.util.List;
 @RequestMapping("/api/vehicles")
 public class VehicleController {
 
+    private final VehicleService vehicleService;
+    private final BrandService brandService;
+
     @Autowired
-    private VehicleService vehicleService;
-    @Autowired
-    private BrandService brandService;
+    public VehicleController(VehicleService vehicleService, BrandService brandService) {
+        this.vehicleService = vehicleService;
+        this.brandService = brandService;
+    }
 
     @GetMapping
     public ResponseEntity<List<Vehicle>> getAllVehicles() {

@@ -21,8 +21,12 @@ import java.util.Optional;
 @RequestMapping("/api/sales")
 public class SalesController {
 
+    private final SalesService salesService;
+
     @Autowired
-    private SalesService salesService;
+    public SalesController(SalesService salesService) {
+        this.salesService = salesService;
+    }
 
     /**
      * Get all sales with pagination.

@@ -9,10 +9,10 @@ Esta guía te ayudará a poner en marcha el proyecto de ventas de vehículos si 
 
 ### 2. Abrir y ejecutar el proyecto
 
-1.  **Descarga y descomprime**: Descarga el proyecto en formato ZIP y descomprímelo en una carpeta.
-2.  **Abre el IDE**: Inicia tu IDE y selecciona "Open" para abrir la carpeta del proyecto que acabas de descomprimir.
-3.  **Ejecuta la aplicación**: Dentro de tu IDE, busca el archivo principal de la aplicación. Suelen tener un nombre como `Application.java` y una etiqueta `main`. Haz clic derecho sobre este archivo y selecciona "Run" (ejecutar).
-4.  **Verifica la consola**: En la parte inferior del IDE, se abrirá una consola que te mostrará los mensajes del programa. Busca la línea que indica que el servidor ha iniciado, probablemente algo como `Started Application in ... seconds (JVM running for ...)`.
+1.  **Descarga**: Descarga el repositorio.
+2.  **Abre el IDE**: Inicia tu IDE y selecciona "Open" para abrir la carpeta del proyecto.
+3.  **Ejecuta la aplicación**: Ejecuta el comando de SpringBoot: `mvn spring-boot:run`.
+4.  **Verifica la consola**: En la parte inferior del IDE, se abrirá una consola que te mostrará los mensajes del programa. Busca la línea que indica que el servidor ha iniciado, probablemente algo como `Started Application ... Tomcat initialized with port 8080 (http)`.
 
 ### 3. Usar la API (Probar la aplicación)
 

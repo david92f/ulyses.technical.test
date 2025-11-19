@@ -17,8 +17,12 @@ import java.util.Optional;
 @Transactional(readOnly = false)
 public class VehicleServiceImpl implements VehicleService {
 
+    private final VehicleRepository vehicleRepository;
+
     @Autowired
-    private VehicleRepository vehicleRepository;
+    public VehicleServiceImpl(VehicleRepository vehicleRepository) {
+        this.vehicleRepository = vehicleRepository;
+    }
 
     /**
      * {@inheritDoc}
